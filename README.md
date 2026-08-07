@@ -2,13 +2,11 @@
 
 Code and data for the paper:
 
-> **Organization versus Scale in Variational Quantum Optimization:
-> A Step-Level Diagnostic Framework**
+> **Organization versus Scale in Variational Quantum Optimization: A Step-Level Diagnostic Framework**
 > Pilsung Kang (Dankook University)
 > arXiv: (to be added)
 
-This is the companion repository to the destructive-interference
-diagnostics of barren plateaus introduced in arXiv:2605.01319
+The paper builds on the destructive-interference diagnostics of barren plateaus introduced in arXiv:2605.01319
 ([BP-DI repository](https://github.com/pilsungk/BP-DI)).
 
 ## Overview
