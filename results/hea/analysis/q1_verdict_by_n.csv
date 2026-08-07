@@ -1,0 +1,5 @@
+n,corr_pcgrad,corr_pcgrad_nm,verdict_code,verdict_text
+4,0.8714016656232181,0.9702908308431191,partial_mixed,partial or intermediate outcome; neither pre-committed threshold pattern is met
+6,0.8612773563405695,0.9901427982530469,partial_mixed,partial or intermediate outcome; neither pre-committed threshold pattern is met
+8,0.655467546108951,0.9594406713203822,norm_match_recovers,norm matching restores predictability; this is consistent with step-size inflation as the primary contributor
+10,0.7907943109787908,0.9716873389796677,norm_match_recovers,norm matching restores predictability; this is consistent with step-size inflation as the primary contributor

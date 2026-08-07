@@ -1,0 +1,10 @@
+Q2 VERDICT -- projected direction versus matched-budget line search
+============================================================
+grading rule at margin m = 0.02: EQUIVALENCE if the entire CI lies within [-m, +m]; SEPARATION if the entire CI lies beyond +-m; direction consistent but practical size UNRESOLVED if the CI excludes 0 but crosses the margin band; INCONCLUSIVE if the CI covers 0 and extends beyond +-m (too wide to grade)
+overall CI: hierarchical bootstrap over (n,d) conditions and paired seeds; conditions receive equal weight
+per-condition CI: paired bootstrap over seeds
+
+overall condition-balanced mean (grid - vls) = +0.0339, hierarchical CI95 [+0.0055, +0.0669], conditions=12, pairs=360
+per-qubit sensitivity mean = +0.00508, hierarchical CI95 [+0.00143, +0.00978]
+-> vanilla_ls_nm advantage is statistically consistent in direction, but its practical size is UNRESOLVED: the CI crosses the +-margin.
+faithfulness to original LSO: max condition |lso_grid-lso_pcgrad|=0.0011, mean absolute difference=0.0002

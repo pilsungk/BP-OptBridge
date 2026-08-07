@@ -1,0 +1,3 @@
+ansatz,method,mean_dB_eff,mean_dE_final,worse_conditions,winner_cases
+hva,pcgrad,0.6970545766343662,1.3771630845965193,12/12,0/360
+hva,lso_pcgrad,-0.0018999358176003047,-0.036947762952276246,2/12,263/360

@@ -1,0 +1,16 @@
+Q1 VERDICT -- directional rotation versus norm inflation
+============================================================
+thresholds: retained corr >= 0.95, collapsed corr <= 0.85, rescue if harm_nm <= 0.5 x harm_pc
+Interpretive rule: single-mechanism wording is used only when all n values receive the same verdict.
+
+condition-balanced mean dE_final vs vanilla: pcgrad -0.1998, pcgrad_nm +0.3900
+mean across n of pooled corr(pred, act): pcgrad 0.7947, pcgrad_nm 0.9729
+
+Per-n predictability adjudication:
+  n=4: pcgrad=0.8714, pcgrad_nm=0.9703 -> partial or intermediate outcome; neither pre-committed threshold pattern is met
+  n=6: pcgrad=0.8613, pcgrad_nm=0.9901 -> partial or intermediate outcome; neither pre-committed threshold pattern is met
+  n=8: pcgrad=0.6555, pcgrad_nm=0.9594 -> norm matching restores predictability; this is consistent with step-size inflation as the primary contributor
+  n=10: pcgrad=0.7908, pcgrad_nm=0.9717 -> norm matching restores predictability; this is consistent with step-size inflation as the primary contributor
+
+-> SCALE-DEPENDENT OR MIXED outcome: the per-n verdicts are not uniform, so no single-mechanism conclusion is warranted.
+-> Full PCGrad is not harmful on average across conditions; interpret per-condition outcomes rather than invoking harm rescue.

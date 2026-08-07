@@ -1,0 +1,21 @@
+SCHEMA AUDIT
+============================================================
+required columns: none missing  [OK]
+exact six variants: lso_grid, lso_pcgrad, pcgrad, pcgrad_nm, vanilla, vanilla_ls_nm  [OK]
+schema version: config.json found 4  [OK]
+duplicate row keys: 0  [OK]
+states per run: expected 101, bad runs 0  [OK]
+step index coverage: expected 0..100, bad runs 0  [OK]
+seeds per (n,d,variant): expected 30, bad cells 0  [OK]
+missing required values: 0  [OK]
+probe budget vanilla: observed 0/0, expected [0,0]  [OK]
+probe budget pcgrad: observed 0/0, expected [0,0]  [OK]
+probe budget lso_pcgrad: observed 7/8, expected [7,8]  [OK]
+probe budget pcgrad_nm: observed 0/0, expected [0,0]  [OK]
+probe budget lso_grid: observed 5/5, expected [5,5]  [OK]
+probe budget vanilla_ls_nm: observed 5/5, expected [5,5]  [OK]
+pcgrad_nm norm matching: max|norm_ratio-1|=8.882e-16  [OK]
+pcgrad_nm diagnostics: fallbacks=0, degenerate anchors=0
+pcgrad norm_ratio consistency: max|norm_ratio-pc_norm_ratio|=0.000e+00  [OK]
+
+OVERALL: OK

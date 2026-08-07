@@ -1,0 +1,16 @@
+Q1 VERDICT -- directional rotation versus norm inflation
+============================================================
+thresholds: retained corr >= 0.95, collapsed corr <= 0.85, rescue if harm_nm <= 0.5 x harm_pc
+Interpretive rule: single-mechanism wording is used only when all n values receive the same verdict.
+
+condition-balanced mean dE_final vs vanilla: pcgrad +1.3772, pcgrad_nm +1.4802
+mean across n of pooled corr(pred, act): pcgrad 0.8173, pcgrad_nm 0.9332
+
+Per-n predictability adjudication:
+  n=4: pcgrad=0.8538, pcgrad_nm=0.9551 -> partial or intermediate outcome; neither pre-committed threshold pattern is met
+  n=6: pcgrad=0.8051, pcgrad_nm=0.9226 -> partial or intermediate outcome; neither pre-committed threshold pattern is met
+  n=8: pcgrad=0.8123, pcgrad_nm=0.9357 -> partial or intermediate outcome; neither pre-committed threshold pattern is met
+  n=10: pcgrad=0.7978, pcgrad_nm=0.9191 -> partial or intermediate outcome; neither pre-committed threshold pattern is met
+
+-> All tested n show intermediate outcomes; report the correlations without a binary mechanism claim.
+-> Energy harm persists after norm matching; directional quality or trajectory effects remain important.

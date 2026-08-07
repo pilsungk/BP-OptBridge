@@ -1,0 +1,61 @@
+{
+  "schema_ok": 1,
+  "q1_mean_dE_condition_balanced": {
+    "dE_pcgrad": 1.3771630845965193,
+    "dE_pcgrad_nm": 1.4801945900069777,
+    "dE_lso_pcgrad": -0.036947762952276246
+  },
+  "q1_predictability_by_n": [
+    {
+      "n": 4,
+      "corr_pcgrad": 0.8538044883975138,
+      "corr_pcgrad_nm": 0.9551480649068222,
+      "verdict_code": "partial_mixed",
+      "verdict_text": "partial or intermediate outcome; neither pre-committed threshold pattern is met"
+    },
+    {
+      "n": 6,
+      "corr_pcgrad": 0.8051254680879576,
+      "corr_pcgrad_nm": 0.9226459187321573,
+      "verdict_code": "partial_mixed",
+      "verdict_text": "partial or intermediate outcome; neither pre-committed threshold pattern is met"
+    },
+    {
+      "n": 8,
+      "corr_pcgrad": 0.8123304498099523,
+      "corr_pcgrad_nm": 0.9357355979012147,
+      "verdict_code": "partial_mixed",
+      "verdict_text": "partial or intermediate outcome; neither pre-committed threshold pattern is met"
+    },
+    {
+      "n": 10,
+      "corr_pcgrad": 0.7978425021835022,
+      "corr_pcgrad_nm": 0.9191453395228867,
+      "verdict_code": "partial_mixed",
+      "verdict_text": "partial or intermediate outcome; neither pre-committed threshold pattern is met"
+    }
+  ],
+  "q2": {
+    "overall_mean": 0.033888630025617074,
+    "overall_ci95": [
+      0.005490267808068885,
+      0.06688382567685425
+    ],
+    "overall_mean_per_qubit": 0.005080854134637615,
+    "overall_ci95_per_qubit": [
+      0.0014295781509878899,
+      0.009780776286260609
+    ],
+    "n_conditions": 12,
+    "n_pairs": 360
+  },
+  "ansatz": "hva",
+  "thresholds": {
+    "corr_retained": 0.95,
+    "corr_collapsed": 0.85,
+    "harm_rescue_fraction": 0.5,
+    "equivalence_margin": 0.02,
+    "n_boot": 5000,
+    "bootstrap_seed": 20260802
+  }
+}

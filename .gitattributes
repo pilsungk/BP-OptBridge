@@ -1,0 +1,5 @@
+# .gitattributes
+* text=auto eol=lf
+*.gz binary
+*.pdf binary
+*.png binary

@@ -1,0 +1,61 @@
+{
+  "schema_ok": 1,
+  "q1_mean_dE_condition_balanced": {
+    "dE_pcgrad": -0.19984895494142507,
+    "dE_pcgrad_nm": 0.3899630039180851,
+    "dE_lso_pcgrad": -0.6256200427909343
+  },
+  "q1_predictability_by_n": [
+    {
+      "n": 4,
+      "corr_pcgrad": 0.8714016656232181,
+      "corr_pcgrad_nm": 0.9702908308431191,
+      "verdict_code": "partial_mixed",
+      "verdict_text": "partial or intermediate outcome; neither pre-committed threshold pattern is met"
+    },
+    {
+      "n": 6,
+      "corr_pcgrad": 0.8612773563405695,
+      "corr_pcgrad_nm": 0.9901427982530469,
+      "verdict_code": "partial_mixed",
+      "verdict_text": "partial or intermediate outcome; neither pre-committed threshold pattern is met"
+    },
+    {
+      "n": 8,
+      "corr_pcgrad": 0.655467546108951,
+      "corr_pcgrad_nm": 0.9594406713203822,
+      "verdict_code": "norm_match_recovers",
+      "verdict_text": "norm matching restores predictability; this is consistent with step-size inflation as the primary contributor"
+    },
+    {
+      "n": 10,
+      "corr_pcgrad": 0.7907943109787908,
+      "corr_pcgrad_nm": 0.9716873389796677,
+      "verdict_code": "norm_match_recovers",
+      "verdict_text": "norm matching restores predictability; this is consistent with step-size inflation as the primary contributor"
+    }
+  ],
+  "q2": {
+    "overall_mean": 0.2669083113986931,
+    "overall_ci95": [
+      0.12508019255838448,
+      0.4337289025312239
+    ],
+    "overall_mean_per_qubit": 0.03210032053533828,
+    "overall_ci95_per_qubit": [
+      0.016645662694382148,
+      0.05058015998538501
+    ],
+    "n_conditions": 12,
+    "n_pairs": 360
+  },
+  "ansatz": "hea",
+  "thresholds": {
+    "corr_retained": 0.95,
+    "corr_collapsed": 0.85,
+    "harm_rescue_fraction": 0.5,
+    "equivalence_margin": 0.02,
+    "n_boot": 5000,
+    "bootstrap_seed": 20260802
+  }
+}

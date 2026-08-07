@@ -1,0 +1,49 @@
+{
+  "schema_version": 4,
+  "n_qubits": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "depths": [
+    4,
+    6,
+    8
+  ],
+  "seeds": 30,
+  "steps": 100,
+  "lr": 0.05,
+  "outdir_root": "./runs_v3",
+  "hamiltonian": "TFIM_OBC",
+  "h_field": 1.0,
+  "ansatz": "TFIM_termwise_HVA",
+  "hva_init": "zero",
+  "hva_layer": "RX on each X term, then RZZ on each ZZ edge",
+  "n_params": "(2*n_qubits - 1) * depth",
+  "variants": [
+    "vanilla",
+    "pcgrad",
+    "pcgrad_nm",
+    "lso_pcgrad",
+    "lso_grid",
+    "vanilla_ls_nm"
+  ],
+  "optimizer_rule": "six-variant ablation: vanilla, pcgrad, pcgrad_nm (norm-matched), lso_pcgrad, lso_grid and vanilla_ls_nm (matched budget)",
+  "lso_cfg": {
+    "alpha_max": 1.0,
+    "alpha_mid_frac": 0.5,
+    "extra_probe_frac": 0.25,
+    "delta_cap_ratio": 1.0
+  },
+  "grid_lambdas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "nm_ratio_min": 1e-06,
+  "selfcheck": false,
+  "timestamp_outdir": "./runs_v3/bp_lso_pcgrad_tfim_hva_20260804_225448"
+}

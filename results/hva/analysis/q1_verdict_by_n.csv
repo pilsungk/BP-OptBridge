@@ -1,0 +1,5 @@
+n,corr_pcgrad,corr_pcgrad_nm,verdict_code,verdict_text
+4,0.8538044883975138,0.9551480649068222,partial_mixed,partial or intermediate outcome; neither pre-committed threshold pattern is met
+6,0.8051254680879576,0.9226459187321573,partial_mixed,partial or intermediate outcome; neither pre-committed threshold pattern is met
+8,0.8123304498099523,0.9357355979012147,partial_mixed,partial or intermediate outcome; neither pre-committed threshold pattern is met
+10,0.7978425021835022,0.9191453395228867,partial_mixed,partial or intermediate outcome; neither pre-committed threshold pattern is met
