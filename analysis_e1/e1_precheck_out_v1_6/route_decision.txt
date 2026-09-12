@@ -1,0 +1,29 @@
+E1 ROUTE SELECTION (protocol v1.6, Section 9.1)
+============================================================
+
+[optimizer-controlled]
+  lso_pcgrad     hea: lite 6/12 cells estimable, full 6/12 cells estimable
+  lso_pcgrad     hva: lite 0/12 cells estimable, full 0/12 cells estimable
+  lso_grid       hea: lite 11/12 cells estimable, full 11/12 cells estimable
+  lso_grid       hva: lite 11/12 cells estimable, full 12/12 cells estimable
+  vanilla_ls_nm  hea: lite 5/12 cells estimable, full 12/12 cells estimable
+  vanilla_ls_nm  hva: lite 0/12 cells estimable, full 11/12 cells estimable
+
+[rule-determined]
+  pcgrad         hea: lite 10/12 cells estimable, full 9/12 cells estimable
+  pcgrad         hva: lite 12/12 cells estimable, full 12/12 cells estimable
+
+[structurally constrained]
+  vanilla        hea: lite 5/12 cells estimable, full 12/12 cells estimable
+  vanilla        hva: lite 1/12 cells estimable, full 12/12 cells estimable
+  pcgrad_nm      hea: lite 11/12 cells estimable, full 10/12 cells estimable
+  pcgrad_nm      hva: lite 12/12 cells estimable, full 12/12 cells estimable
+
+Optimizer-controlled cells: both 31, lite-only 2, full-only 21, neither 18, total 72
+Central rule lso_pcgrad: lite 6/24, full 6/24
+
+-> FULL E1 SELECTED. In optimizer-controlled cells, full-only exceeds lite-only (21 > 2). This is the frozen v1.6 mixed-route rule.
+
+-> Section 13.1 caution: lso_pcgrad is not estimable in every cell. A Gate-A verdict reached through lso_grid and vanilla_ls_nm leaves lso_pcgrad-centered claims unresolved in the affected cells.
+
+This file reports estimability only. No association statistic has been computed.

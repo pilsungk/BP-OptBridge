@@ -1,0 +1,85 @@
+POST-HOC HIGHER-ORDER ANALYSIS OF C
+====================================================================
+
+analysis kind : post hoc sensitivity
+protocol      : post-hoc higher-order C analysis, v1.2 (frozen 2026-09-03)
+
+This analysis does not re-adjudicate the E1 verdict and defines
+no verdict categories of its own. The tables below report the
+cell-level estimates, their spread, and their intervals. The
+time-controlled rows are primary for interpretation.
+
+--------------------------------------------------------------------
+OUTCOME: first-order residual r
+--------------------------------------------------------------------
+
+  time control: YES   [primary for interpretation]
+
+  rule           ansat spec                   est   median      min      max
+  lso_grid       hea   C_given_G_nu_cos      0/12  not estimable in any cell
+  lso_grid       hva   C_given_G_nu_cos      0/12  not estimable in any cell
+  vanilla        hea   C_given_G             4/12   -0.096   -0.328   +0.041
+  vanilla        hva   C_given_G             0/12  not estimable in any cell
+  vanilla_ls_nm  hea   C_given_G             2/12   -0.098   -0.195   -0.001
+  vanilla_ls_nm  hea   C_given_G_nu          0/12  not estimable in any cell
+  vanilla_ls_nm  hva   C_given_G             0/12  not estimable in any cell
+  vanilla_ls_nm  hva   C_given_G_nu          0/12  not estimable in any cell
+
+  time control: no    [continuity with E1]
+
+  rule           ansat spec                   est   median      min      max
+  lso_grid       hea   C_given_G_nu_cos     11/12   +0.102   -0.273   +0.266
+  lso_grid       hva   C_given_G_nu_cos     12/12   +0.189   +0.052   +0.316
+  vanilla        hea   C_given_G            12/12   -0.025   -0.392   +0.220
+  vanilla        hva   C_given_G            12/12   -0.009   -0.089   +0.110
+  vanilla_ls_nm  hea   C_given_G            12/12   -0.011   -0.401   +0.134
+  vanilla_ls_nm  hea   C_given_G_nu         12/12   -0.012   -0.388   +0.088
+  vanilla_ls_nm  hva   C_given_G            12/12   -0.026   -0.119   +0.065
+  vanilla_ls_nm  hva   C_given_G_nu         11/12   +0.019   -0.123   +0.101
+
+--------------------------------------------------------------------
+OUTCOME: curvature proxy kappa
+--------------------------------------------------------------------
+
+  time control: YES   [primary for interpretation]
+
+  rule           ansat spec                   est   median      min      max
+  lso_grid       hea   C_given_G_nu_cos      0/12  not estimable in any cell
+  lso_grid       hva   C_given_G_nu_cos      0/12  not estimable in any cell
+  vanilla        hea   C_given_G             4/12   +0.129   -0.105   +0.327
+  vanilla        hva   C_given_G             0/12  not estimable in any cell
+  vanilla_ls_nm  hea   C_given_G             2/12   +0.084   +0.003   +0.165
+  vanilla_ls_nm  hea   C_given_G_nu          0/12  not estimable in any cell
+  vanilla_ls_nm  hva   C_given_G             0/12  not estimable in any cell
+  vanilla_ls_nm  hva   C_given_G_nu          0/12  not estimable in any cell
+
+  time control: no    [continuity with E1]
+
+  rule           ansat spec                   est   median      min      max
+  lso_grid       hea   C_given_G_nu_cos     11/12   -0.113   -0.312   +0.193
+  lso_grid       hva   C_given_G_nu_cos     12/12   -0.245   -0.396   -0.081
+  vanilla        hea   C_given_G            12/12   +0.062   -0.263   +0.493
+  vanilla        hva   C_given_G            12/12   +0.004   -0.167   +0.164
+  vanilla_ls_nm  hea   C_given_G            12/12   -0.025   -0.234   +0.467
+  vanilla_ls_nm  hea   C_given_G_nu         12/12   +0.040   -0.212   +0.451
+  vanilla_ls_nm  hva   C_given_G            12/12   -0.068   -0.172   +0.147
+  vanilla_ls_nm  hva   C_given_G_nu         11/12   -0.064   -0.226   +0.179
+
+--------------------------------------------------------------------
+EXCLUDED FRACTION under protocol Section 5.2 (kappa only)
+--------------------------------------------------------------------
+  lso_grid       hea   mean 0.0000  max 0.0000
+  lso_grid       hva   mean 0.0000  max 0.0000
+  vanilla        hea   mean 0.0000  max 0.0000
+  vanilla        hva   mean 0.0000  max 0.0000
+  vanilla_ls_nm  hea   mean 0.0000  max 0.0000
+  vanilla_ls_nm  hva   mean 0.0000  max 0.0000
+
+--------------------------------------------------------------------
+STOP RULE (protocol Section 8)
+--------------------------------------------------------------------
+This is the last analysis run for the manuscript, whatever it
+shows. The E1 adjudication is not reopened. No further
+analysis, experiment, or regeneration follows. Any recurrent
+pattern is a post-hoc observation and a direction for future
+work, never a mechanism.

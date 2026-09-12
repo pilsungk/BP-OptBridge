@@ -1,0 +1,12 @@
+DERIVED-QUANTITY IDENTITY AUDIT
+============================================================
+
+protocol: v1.6
+transitions audited: 432000
+
+UA = G cos(theta)   max |cos - UA/G|          = 9.829e-13
+nu vs norm_ratio    max |nu - norm_ratio|     = 5.040e-14
+sqrt(Q) = R A       max |sqrt(Q) - R A|       = 3.553e-15
+|cos(theta)| <= 1   violations                 = 0 of 432000
+
+Numerical zero threshold for validity checks: EPS = 1e-15

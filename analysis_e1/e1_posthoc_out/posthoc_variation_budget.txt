@@ -1,0 +1,39 @@
+POST HOC VARIATION-BUDGET DIAGNOSTIC
+================================================================
+
+analysis kind      : post hoc
+protocol reference : v1.8 (frozen; this analysis is outside it)
+
+This diagnostic was computed after the frozen E1 verdict was
+inspected. It is descriptive, it does not re-adjudicate Gate A,
+and it does not license a causal reading.
+
+Eligible rules     : lso_grid, vanilla_ls_nm
+Cells merged       : 48
+Cells used         : 46 (cell_estimable = True)
+Cells excluded     : 2
+    excluded: hea lso_grid n=10 d=8 (raw rho_bar +0.3548 not used)
+    excluded: hva vanilla_ls_nm n=4 d=8 (raw rho_bar +0.0477 not used)
+
+Correlation of the cell-level rho_nu with the share of
+step-norm log-variance carried by nu:
+
+  scope      cells          vs s_nu        vs s_nu / s_G
+  pooled        46          +0.7387              +0.7033
+  hea           23          +0.6710              +0.6414
+  hva           23          +0.6056              +0.6051
+
+The second column uses s_nu, whose denominator is the
+step-norm variance Var(log R). The third divides the two
+reported median shares, which removes that shared
+denominator without itself being a variance ratio. Close
+agreement between the columns indicates that the pattern
+does not depend on carrying Var(log R) in the denominator.
+
+Interpretation is limited to the following statement. The
+cell-level association rho_nu tended to be larger in cells
+where the optimizer-relative displacement accounted for a
+larger share of the step-norm log-variance. This is a
+correlation between two cell-level summaries. No claim is
+made about why the variation budget differs across cells,
+and no mechanism is identified.

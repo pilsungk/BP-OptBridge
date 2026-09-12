@@ -1,0 +1,5 @@
+variant,coordinate,expected_value,n_values,max_relative_deviation,n_violations,tolerance,audit_pass
+vanilla,nu,1.0,72000,0.0,0,1e-12,True
+vanilla,cos_theta,1.0,72000,7.203126983768016e-13,0,1e-12,True
+pcgrad_nm,nu,1.0,72000,6.661338147750939e-16,0,1e-12,True
+vanilla_ls_nm,cos_theta,1.0,72000,9.75108882528275e-13,0,1e-12,True

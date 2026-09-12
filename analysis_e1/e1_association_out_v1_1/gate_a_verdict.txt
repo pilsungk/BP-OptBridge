@@ -1,0 +1,20 @@
+E1 GATE-A ADJUDICATION (protocol v1.8, implementation 1.1)
+========================================================================
+
+Eligible optimizer-controlled rules: lso_grid, vanilla_ls_nm
+Ineligible on frozen coverage grounds: lso_pcgrad
+The eligible pool has exactly 2 rules; A1/A2 therefore require 2-of-2 unanimity.
+
+rho_nu across eligible rules:
+  lso_grid       hea  8/12 + est 11/12 | hva  4/12 + est 12/12 -> no
+  vanilla_ls_nm  hea  6/12 + est 12/12 | hva  0/12 . est 11/12 -> no
+
+rho_C across eligible rules:
+  lso_grid       hea  0/12 . est 11/12 | hva  0/12 . est 12/12 -> no
+  vanilla_ls_nm  hea  1/12 - est 12/12 | hva  0/12 . est 11/12 -> no
+
+VERDICT: A3 - REGIME DEPENDENT: resolved structure exists within eligible primary analyses but does not hold uniformly across the eligible rules and ansatzes, so neither A1 nor A2 provides a common description.
+
+Section 13.1 safeguard: lso_pcgrad remains excluded from A1/A2 because its frozen precheck coverage cannot satisfy the 9/12 criterion in both ansatzes. Its results are descriptive only, and lso_pcgrad-centered manuscript claims remain unresolved regardless of this verdict.
+
+Section 17 scope: a reproducible rho_C is an association, not an identified mechanism. Mechanism-level claims require the matched-standard-geometry intervention and directional-curvature validation reserved for future work.
