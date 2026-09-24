@@ -7,7 +7,7 @@ Code and data for the paper:
 >
 > Pilsung Kang (Dankook University)
 >
-> arXiv: (to be added)
+> arXiv:2609.21243 
 
 The paper builds on the parameter-level gradient-suppression diagnostics of
 barren plateaus introduced in arXiv:2605.01319
